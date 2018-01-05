@@ -1,0 +1,375 @@
+{
+  "gameSystem": {
+    "name": "Dropzone Commander",
+    "id": "6d58e2c7-f67a-3e19-7acf-5b8a58cf919c",
+    "authorContact": "https://github.com/BSData/dropzone-commander",
+    "authorName": "Rat, Sunabe",
+    "authorUrl": "https://github.com/BSData/dropzone-commander",
+    "battleScribeVersion": 2.03,
+    "revision": 18,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Skirmish", "id": "536b69726d69736823232344415441232323", "hidden": false},
+      {"name": "Commander (S)", "id": "436f6d6d616e6465722028532923232344415441232323", "hidden": false},
+      {"name": "Gates (S)", "id": "47617465732028532923232344415441232323", "hidden": false},
+      {"name": "Drills (S)", "id": "91c6-7b7e-e046-fd63", "hidden": false},
+      {"name": "Clash", "id": "436c61736823232344415441232323", "hidden": false},
+      {"name": "Commander (C)", "id": "436f6d6d616e6465722028432923232344415441232323", "hidden": false},
+      {"name": "Gates (C)", "id": "47617465732028432923232344415441232323", "hidden": false},
+      {"name": "Drills (C)", "id": "546f-71f6-8462-c255", "hidden": false},
+      {"name": "Battle", "id": "426174746c6523232344415441232323", "hidden": false},
+      {"name": "Commander (B)", "id": "436f6d6d616e6465722028422923232344415441232323", "hidden": false},
+      {"name": "Gates (B)", "id": "47617465732028422923232344415441232323", "hidden": false},
+      {"name": "Drills (B)", "id": "660f-039c-2fbd-a58b", "hidden": false}
+    ],
+    "costTypes": [{"name": "pts", "id": "points", "defaultCostLimit": 0}],
+    "forceEntries": [
+      {
+        "name": "Skirmish (500-999)",
+        "id": "536b69726d69736820283530302d3939392923232344415441232323",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Skirmish",
+            "id": "536b69726d69736820283530302d3939392923232344415441232323-536b69726d69736823232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "536b69726d69736823232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "name": "Commander (S)",
+            "id": "536b69726d69736820283530302d3939392923232344415441232323-436f6d6d616e6465722028532923232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "436f6d6d616e6465722028532923232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Gates (S)",
+            "id": "536b69726d69736820283530302d3939392923232344415441232323-47617465732028532923232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "47617465732028532923232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Drills (S)",
+            "id": "536b69726d69736820283530302d3939392923232344415441232323-91c6-7b7e-e046-fd63",
+            "hidden": false,
+            "primary": false,
+            "targetId": "91c6-7b7e-e046-fd63",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Clash (1000-1999)",
+        "id": "436c6173682028313030302d313939392923232344415441232323",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Clash",
+            "id": "436c6173682028313030302d313939392923232344415441232323-436c61736823232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "436c61736823232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "name": "Commander (C)",
+            "id": "436c6173682028313030302d313939392923232344415441232323-436f6d6d616e6465722028432923232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "436f6d6d616e6465722028432923232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Gates (C)",
+            "id": "436c6173682028313030302d313939392923232344415441232323-47617465732028432923232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "47617465732028432923232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Drills (C)",
+            "id": "436c6173682028313030302d313939392923232344415441232323-546f-71f6-8462-c255",
+            "hidden": false,
+            "primary": false,
+            "targetId": "546f-71f6-8462-c255",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Battle (2000+)",
+        "id": "426174746c652028323030302b2923232344415441232323",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Battle",
+            "id": "426174746c652028323030302b2923232344415441232323-426174746c6523232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "426174746c6523232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 7
+              }
+            ]
+          },
+          {
+            "name": "Commander (B)",
+            "id": "426174746c652028323030302b2923232344415441232323-436f6d6d616e6465722028422923232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "436f6d6d616e6465722028422923232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Gates (B)",
+            "id": "426174746c652028323030302b2923232344415441232323-47617465732028422923232344415441232323",
+            "hidden": false,
+            "primary": false,
+            "targetId": "47617465732028422923232344415441232323",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Drills (B)",
+            "id": "426174746c652028323030302b2923232344415441232323-660f-039c-2fbd-a58b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "660f-039c-2fbd-a58b",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Infantry",
+        "id": "496e66616e74727923232344415441232323",
+        "characteristicTypes": [
+          {"name": "Armour", "id": "41726d6f757223232344415441232323"},
+          {"name": "Move", "id": "4d6f766523232344415441232323"},
+          {"name": "Countermeasures", "id": "436f756e7465726d6561737572657323232344415441232323"},
+          {"name": "Damage Points", "id": "44616d61676520506f696e747323232344415441232323"},
+          {"name": "Points", "id": "506f696e747323232344415441232323"},
+          {"name": "Type", "id": "5479706523232344415441232323"},
+          {"name": "Category", "id": "43617465676f727923232344415441232323"},
+          {"name": "CQB", "id": "43514223232344415441232323"},
+          {"name": "Fortitude", "id": "466f7274697475646523232344415441232323"},
+          {"name": "S&C", "id": "53264323232344415441232323"},
+          {"name": "Special", "id": "5370656369616c23232344415441232323"}
+        ]
+      },
+      {
+        "name": "Land Unit",
+        "id": "4c616e6420556e697423232344415441232323",
+        "characteristicTypes": [
+          {"name": "Armour", "id": "41726d6f757223232344415441232323"},
+          {"name": "Move", "id": "4d6f766523232344415441232323"},
+          {"name": "Countermeasures", "id": "436f756e7465726d6561737572657323232344415441232323"},
+          {"name": "Damage Points", "id": "44616d61676520506f696e747323232344415441232323"},
+          {"name": "Points", "id": "506f696e747323232344415441232323"},
+          {"name": "Type", "id": "5479706523232344415441232323"},
+          {"name": "Category", "id": "43617465676f727923232344415441232323"},
+          {"name": "S&C", "id": "53264323232344415441232323"},
+          {"name": "Special", "id": "5370656369616c23232344415441232323"}
+        ]
+      },
+      {
+        "name": "Air Unit",
+        "id": "41697220556e697423232344415441232323",
+        "characteristicTypes": [
+          {"name": "Armour", "id": "41726d6f757223232344415441232323"},
+          {"name": "Move", "id": "4d6f766523232344415441232323"},
+          {"name": "Countermeasures", "id": "436f756e7465726d6561737572657323232344415441232323"},
+          {"name": "Damage Points", "id": "44616d61676520506f696e747323232344415441232323"},
+          {"name": "Points", "id": "506f696e747323232344415441232323"},
+          {"name": "Type", "id": "5479706523232344415441232323"},
+          {"name": "Category", "id": "43617465676f727923232344415441232323"},
+          {"name": "S&C", "id": "53264323232344415441232323"},
+          {"name": "LZ", "id": "4c5a23232344415441232323"},
+          {"name": "Special", "id": "5370656369616c23232344415441232323"}
+        ]
+      },
+      {
+        "name": "Weapon",
+        "id": "576561706f6e23232344415441232323",
+        "characteristicTypes": [
+          {"name": "Energy", "id": "456e6572677923232344415441232323"},
+          {"name": "Shots", "id": "53686f747323232344415441232323"},
+          {"name": "Accuracy", "id": "416363757261637923232344415441232323"},
+          {"name": "Range (Full)", "id": "52616e6765202846756c6c2923232344415441232323"},
+          {"name": "Range (Countered)", "id": "52616e67652028436f756e74657265642923232344415441232323"},
+          {"name": "Move & Fire", "id": "4d6f76652026204669726523232344415441232323"},
+          {"name": "Arc", "id": "41726323232344415441232323"},
+          {"name": "Special", "id": "5370656369616c23232344415441232323"}
+        ]
+      },
+      {
+        "name": "Commander",
+        "id": "436f6d6d616e64657223232344415441232323",
+        "characteristicTypes": [
+          {"name": "Command Value", "id": "436f6d6d616e642056616c756523232344415441232323"},
+          {"name": "Radius", "id": "52616469757323232344415441232323"},
+          {"name": "Allowed", "id": "416c6c6f77656423232344415441232323"},
+          {"name": "Points", "id": "506f696e747323232344415441232323"}
+        ]
+      },
+      {
+        "name": "Gate",
+        "id": "4761746523232344415441232323",
+        "characteristicTypes": [
+          {"name": "Mass Total", "id": "4d61737320546f74616c23232344415441232323"},
+          {"name": "Gate Total", "id": "4761746520546f74616c23232344415441232323"},
+          {"name": "Gate Squads", "id": "476174652053717561647323232344415441232323"},
+          {"name": "Other Squads", "id": "4f746865722053717561647323232344415441232323"}
+        ]
+      }
+    ]
+  }
+}
